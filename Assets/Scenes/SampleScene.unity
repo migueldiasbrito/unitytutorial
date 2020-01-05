@@ -5219,6 +5219,7 @@ GameObject:
   - component: {fileID: 1079589415}
   - component: {fileID: 1079589417}
   - component: {fileID: 1079589416}
+  - component: {fileID: 1079589418}
   m_Layer: 5
   m_Name: Cucumber_Count
   m_TagString: Untagged
@@ -5285,6 +5286,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1079589414}
   m_CullTransparentMesh: 0
+--- !u!114 &1079589418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1079589414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50d345d864a681e4cba48c5d190f382d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentCucumberCount: 0
+  cucumbers: []
 --- !u!1001 &1165256284
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8390,6 +8405,7 @@ GameObject:
   - component: {fileID: 2043389334}
   - component: {fileID: 2043389336}
   - component: {fileID: 2043389335}
+  - component: {fileID: 2043389337}
   m_Layer: 5
   m_Name: CucumberBeetle_Count
   m_TagString: Untagged
@@ -8456,6 +8472,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2043389333}
   m_CullTransparentMesh: 0
+--- !u!114 &2043389337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2043389333}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bef4714a90bc0b7469d93d98ac9630d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentBeetleCount: 0
+  beetles: []
 --- !u!1001 &2061149541
 PrefabInstance:
   m_ObjectHideFlags: 0
