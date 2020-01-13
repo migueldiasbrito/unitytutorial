@@ -7,10 +7,16 @@ public class PlayerController : MonoBehaviour {
 	public string RunState, WalkState, IdleState, JumpState, DieState, ThrowState;
 	bool isWalking, isRunning, isJumping, isIdle, isDie, forward,left,right,back;
 	Animator mAnim;
+
+	public AudioSource audioSource;
+	public AudioClip jumping;
+	public AudioClip throwing;
+	
 	// Use this for initialization
 	void Start () {
 		mAnim = GetComponent<Animator>();
 		isIdle = true;
+		audioSource = GetComponent<AudioSource>();
 	}
 	
 	// Update is called once per frame
@@ -153,6 +159,7 @@ public class PlayerController : MonoBehaviour {
 
 	public void Jump()
 	{
+		audioSource.PlayOneShot(jumping);
 		mAnim.SetBool(RunState, false);
 		mAnim.SetBool(WalkState, false);
 		mAnim.SetBool(IdleState, false);
@@ -162,6 +169,7 @@ public class PlayerController : MonoBehaviour {
 
 	public void Throw()
 	{
+		audioSource.PlayOneShot(throwing);
 		mAnim.SetBool(RunState, false);
 		mAnim.SetBool(WalkState, false);
 		mAnim.SetBool(IdleState, false);
